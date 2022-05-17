@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIGA_FUTBOL", "LIGA_FUTBOL\LIGA_FUTBOL.csproj", "{C0E7D7BA-5013-4FFA-A652-1B6CD710FC45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAPA_DATOS", "CAPA_DATOS\CAPA_DATOS.csproj", "{B7A39171-EA87-410A-8E92-016FB1868F8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0E7D7BA-5013-4FFA-A652-1B6CD710FC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E7D7BA-5013-4FFA-A652-1B6CD710FC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E7D7BA-5013-4FFA-A652-1B6CD710FC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E7D7BA-5013-4FFA-A652-1B6CD710FC45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7A39171-EA87-410A-8E92-016FB1868F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7A39171-EA87-410A-8E92-016FB1868F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7A39171-EA87-410A-8E92-016FB1868F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7A39171-EA87-410A-8E92-016FB1868F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7906321-BADB-40F8-B4FA-8EAE99E815BF}
+	EndGlobalSection
+EndGlobal
