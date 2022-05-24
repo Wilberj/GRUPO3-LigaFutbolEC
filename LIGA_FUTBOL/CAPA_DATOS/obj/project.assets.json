@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\farem\\Desktop\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
+      "projectUniqueName": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
       "projectName": "CAPA_DATOS",
-      "projectPath": "C:\\Users\\farem\\Desktop\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
+      "projectPath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
       "packagesPath": "C:\\Users\\farem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\farem\\Desktop\\LIGA_FUTBOL\\CAPA_DATOS\\obj\\",
+      "outputPath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

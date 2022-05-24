@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj": {}
+    "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj": {
+    "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
-        "projectName": "CAPA_DATOS",
-        "projectPath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
+        "projectUniqueName": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj",
+        "projectName": "CAPA_NEGOCIO",
+        "projectPath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj",
         "packagesPath": "C:\\Users\\farem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\obj\\",
+        "outputPath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -43,12 +43,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

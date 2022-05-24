@@ -6726,11 +6726,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\farem\\Desktop\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
+      "projectUniqueName": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
       "projectName": "LIGA_FUTBOL",
-      "projectPath": "C:\\Users\\farem\\Desktop\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
+      "projectPath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
       "packagesPath": "C:\\Users\\farem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\farem\\Desktop\\LIGA_FUTBOL\\LIGA_FUTBOL\\obj\\",
+      "outputPath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g71EcJ6b7xzOAIiwgrd6LK0sFEJt1wnF/4Q/OdKaFdBBAwRSfFFeM6OdK1cnmmrvxhd87ZpaebQY6Rg3/CfA9w==",
+  "dgSpecHash": "0JgjrPU9l2lryH+Rto4D8iE2W14V22vks5Wq/73afOEYh5w7ruzzFqOZL8aLn+s4ulTbDr2aJIozBvj11FBcrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\farem\\Desktop\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
+  "projectFilePath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\farem\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\farem\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.3\\microsoft.aspnetcore.cryptography.internal.5.0.3.nupkg.sha512",

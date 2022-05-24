@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4CWrw//VrfCugInczL/AdA7bN5cOTGXyxTP0yCs2pjfS/ZtHlKj5uy1bGhTe/Kfe5Sak88cAE7GxzJqq2f1jAA==",
+  "dgSpecHash": "M9oQYxCQNx3j9ca4JIQ3ZdRQshhq5i62hSQK7nlf4MG1nT0Y8wgQZ+Yl5oh727dBACUGZQN1rK3/B7Jj8Cb5Eg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\farem\\Desktop\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
+  "projectFilePath": "C:\\Users\\farem\\Desktop\\clone\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\farem\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\farem\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
