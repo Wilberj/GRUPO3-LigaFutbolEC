@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj": {}
+    "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj": {
+    "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
+        "projectUniqueName": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
         "projectName": "CAPA_DATOS",
-        "projectPath": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
-        "packagesPath": "C:\\Users\\farem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\obj\\",
+        "projectPath": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj",
+        "packagesPath": "C:\\Users\\Uriel Sandi G\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\farem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Uriel Sandi G\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -64,24 +66,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj": {
+    "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj",
+        "projectUniqueName": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj",
         "projectName": "CAPA_NEGOCIO",
-        "projectPath": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj",
-        "packagesPath": "C:\\Users\\farem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\obj\\",
+        "projectPath": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj",
+        "packagesPath": "C:\\Users\\Uriel Sandi G\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\farem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Uriel Sandi G\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -96,8 +100,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj": {
-                "projectPath": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj"
+              "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj": {
+                "projectPath": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_DATOS\\CAPA_DATOS.csproj"
               }
             }
           }
@@ -126,24 +130,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj": {
+    "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
+        "projectUniqueName": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
         "projectName": "LIGA_FUTBOL",
-        "projectPath": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
-        "packagesPath": "C:\\Users\\farem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\obj\\",
+        "projectPath": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\LIGA_FUTBOL.csproj",
+        "packagesPath": "C:\\Users\\Uriel Sandi G\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\LIGA_FUTBOL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\farem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Uriel Sandi G\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -158,8 +164,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj": {
-                "projectPath": "C:\\Users\\farem\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj"
+              "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj": {
+                "projectPath": "C:\\Users\\Uriel Sandi G\\Desktop\\Repositorio\\GRUPO3-LigaFutbolEC\\LIGA_FUTBOL\\CAPA_NEGOCIO\\CAPA_NEGOCIO.csproj"
               }
             }
           }
@@ -217,7 +223,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

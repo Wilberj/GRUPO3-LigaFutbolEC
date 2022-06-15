@@ -2,32 +2,34 @@
 using System.Collections.Generic;
 using System.Text;
 using CAPA_DATOS;
+
 namespace CAPA_NEGOCIO
 {
-    public class TORNEO
+    public class GOLES
     {
-        private string TableName = "TORNEO";
+        private string TableName = "GOLES";
+        public int ID_GOL { get; set; }
         public int ID_TORNEO { get; set; }
-        public string NOMBRE_TORENO { get; set; }
-        public DateTime FECHA_INICIO { get; set; }
-        public DateTime FECHA_FINAL { get; set; }
-        public int NUMERO_DE_JORNADAS { get; set; }
+        public int ID_PARTIDO { get; set; }
+        public int ID_CLUB_ANOTADOR { get; set; }
+        public int JUGADOR_ANOTADOR { get; set; }
+        public int MINUTO_ANOTACION { get; set; }
 
-        public object Save(TORNEO inst)
+        public object Save(GOLES inst)
         {
             try
             {
                 SqlADOConexion.IniciarConexion("sa", "1234");
 
 
-                if (inst.ID_TORNEO == -1)
+                if (inst.ID_GOL == -1)
                 {
                     return SqlADOConexion.SQLM.InsertObject(TableName, inst);
 
                 }
                 else
                 {
-                    return SqlADOConexion.SQLM.UpdateObject(TableName, inst, "JUGADORES");
+                    return SqlADOConexion.SQLM.UpdateObject(TableName, inst, "GOLES");
                 }
 
             }
@@ -36,7 +38,7 @@ namespace CAPA_NEGOCIO
                 throw;
             }
         }
-        public Object Get(JUGADORES INST)
+        public Object Get(GOLES INST)
         {
             try
             {
