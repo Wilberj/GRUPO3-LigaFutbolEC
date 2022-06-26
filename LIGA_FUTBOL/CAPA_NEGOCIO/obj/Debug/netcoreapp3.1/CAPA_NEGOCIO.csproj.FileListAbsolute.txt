@@ -1,0 +1,13 @@
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\bin\Debug\netcoreapp3.1\CAPA_NEGOCIO.deps.json
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\bin\Debug\netcoreapp3.1\CAPA_NEGOCIO.dll
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\bin\Debug\netcoreapp3.1\CAPA_NEGOCIO.pdb
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\bin\Debug\netcoreapp3.1\CAPA_DATOS.dll
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\bin\Debug\netcoreapp3.1\CAPA_DATOS.pdb
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\obj\Debug\netcoreapp3.1\CAPA_NEGOCIO.csproj.AssemblyReference.cache
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\obj\Debug\netcoreapp3.1\CAPA_NEGOCIO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\obj\Debug\netcoreapp3.1\CAPA_NEGOCIO.AssemblyInfoInputs.cache
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\obj\Debug\netcoreapp3.1\CAPA_NEGOCIO.AssemblyInfo.cs
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\obj\Debug\netcoreapp3.1\CAPA_NEGOCIO.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\obj\Debug\netcoreapp3.1\CAPA_NEGOCIO.csproj.CopyComplete
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\obj\Debug\netcoreapp3.1\CAPA_NEGOCIO.dll
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\CAPA_NEGOCIO\obj\Debug\netcoreapp3.1\CAPA_NEGOCIO.pdb

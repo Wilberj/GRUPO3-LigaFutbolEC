@@ -1,0 +1,75 @@
+﻿.BTN {
+    outline: none;
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.4cm;
+    background-color: white;
+    cursor: pointer; 
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: none; 
+    font-weight: 100; 
+}
+
+.BTNOk {
+    color: white;
+    background-color: darkblue;
+}
+.BTNOk2 {
+    color: white;
+    background-color: darkgreen; 
+}
+
+.BTNCancel {
+    color: white;
+    background-color: red;
+}
+
+.FrmContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px; 
+    margin: 10px;
+    padding: 20px; 
+    box-shadow: 0 2px 2px 2px rgba(0 , 0, 0 , 0.2);
+    border-radius: 5px; 
+}
+
+.TxtForm{
+    width: calc(100% - 10px);
+    padding: 5px;
+    border-radius: 5px; 
+    border: 1px solid #808080; 
+}
+
+.FrmTable{
+    width: 100%; 
+    box-shadow: 0px 0px 2px 2px rgba( 0 , 0 , 0 , 0.2); 
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.FrmTable th {
+    color: darkgray;
+    background: #031b69;
+    border-bottom: 4px solid #808080;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 100;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle; 
+
+}
+
+.FrmTable td{
+    padding:10px;
+}
+
+.FrmTable tr:nth-child(odd) td{
+    background: #d1d1d1; 
+}

@@ -72,9 +72,7 @@ namespace CAPA_DATOS
                 }
                 ColumnNames = ColumnNames.TrimEnd(',');
                 Values = Values.TrimEnd(',');
-                string strQuery = "INSERT INTO " + TableName 
-                    + "("+ ColumnNames + ") VALUES(" 
-                    + Values + ") SELECT SCOPE_IDENTITY()";                
+                string strQuery = "INSERT INTO " + TableName  + "("+ ColumnNames + ") VALUES(" + Values + ") SELECT SCOPE_IDENTITY()";                
                 return ExcuteSqlQuery(strQuery);
             }
             catch (Exception)
@@ -184,7 +182,7 @@ namespace CAPA_DATOS
                 throw;
             }
         }
-        private static List<Object> ConvertDataTable(DataTable dt, Object Inst) {
+        private static List<Object> ConvertDataTable(DataTable dt, Object Inst){
             List<Object> data = new List<Object>();
             foreach (DataRow row in dt.Rows)
             {
