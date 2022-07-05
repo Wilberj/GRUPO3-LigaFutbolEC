@@ -15,6 +15,12 @@
     font-weight: 100; 
 }
 
+.BTNNuevoTorneo {
+    color: white;
+    text-align:center ; 
+    background-color: darkorange;
+}
+
 .BTNOk {
     color: white;
     background-color: darkblue;

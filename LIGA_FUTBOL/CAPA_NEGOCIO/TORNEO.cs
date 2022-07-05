@@ -6,28 +6,28 @@ namespace CAPA_NEGOCIO
 {
     public class TORNEO
     {
-        private string TableName = "TORNEO";
+        public string TableName = "TORNEO";
         public int ID_TORNEO { get; set; }
-        public string NOMBRE_TORENO { get; set; }
+        public string NOMBRE_TORNEO { get; set; }
         public DateTime FECHA_INICIO { get; set; }
         public DateTime FECHA_FINAL { get; set; }
         public int NUMERO_DE_JORNADAS { get; set; }
 
-        public object Save(TORNEO inst)
+        public Object Save(TORNEO INST)
         {
             try
             {
                 SqlADOConexion.IniciarConexion("sa", "1234");
 
 
-                if (inst.ID_TORNEO == -1)
+                if (INST.ID_TORNEO == -1)
                 {
-                    return SqlADOConexion.SQLM.InsertObject(TableName, inst);
+                    return SqlADOConexion.SQLM.InsertObject(TableName, INST);
 
                 }
                 else
                 {
-                    return SqlADOConexion.SQLM.UpdateObject(TableName, inst, "JUGADORES");
+                    return SqlADOConexion.SQLM.UpdateObject(TableName, INST, "ID_TORNEO");
                 }
 
             }
@@ -36,7 +36,7 @@ namespace CAPA_NEGOCIO
                 throw;
             }
         }
-        public Object Get(JUGADORES INST)
+        public Object Get(TORNEO INST)
         {
             try
             {

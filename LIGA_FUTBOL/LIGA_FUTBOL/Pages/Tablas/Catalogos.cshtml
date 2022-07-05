@@ -1,24 +1,26 @@
 ﻿@page
-@model LIGA_FUTBOL.Pages.Tablas.JornadasModel
+@model LIGA_FUTBOL.Pages.Tablas.CatalogosModel
 @{
 }
+
 
 <div class="Catalogos">
     <div class="Menu">
         <div class="ListaCatalogos">
             <strong>Lista de catalogos </strong>
-            <a href="../Pages/Tablas/ActualizarEstadios.cshtml">Estadios</a>
+            <a href="../Pages/Tablas/Probando Estadio.cshtml">Estadios</a>
             <a>Clubes</a>
             <a>Jugadores</a>
         </div>
 
 
     </div>
+
     <div class="Contenido">
         <script type="module">
             import CreateTable from "../js/TableComponent.js";
             const LoadData = async () => {
-                let url = "../api/Values/GetEstadio";
+                let url = "../api/Values/GetTorneo";
                 let response = await fetch(url);
                 response = await response.json();
                 CreateTable(response, TableData, FunctionEdit);
@@ -36,11 +38,14 @@
             window.onload = async () => {
                 BtnSave.onclick = async () => {
                     const ObjIns = {
-                        ID_ESTADIO: (TxtID.value == "" ? -1 : TxtID.value),
-                        NOMBRE_ESTADIO: TxtNombre.value,
+                        ID_TORNEO: (TxtID.value == "" ? -1 : TxtID.value),
+                        NOMBRE_TORNEO: TxtNombre.value,
+                        FECHA_INICIO: TxtFechaI.value,
+                        FECHA_FINAL: TxtFechaF.value,
+                        NUMERO_DE_JORNADAS: TxtNumeroJornadas.value
 
                     }
-                    let url = "../api/Values/SaveEstadio";
+                    let url = "../api/Values/SaveTorneo";
                     let response = await fetch(url, {
                         method: 'POST',
                         headers: {
@@ -55,6 +60,9 @@
                         LoadData();
                         TxtID.Value = "-1";
                         TxtNombre.value = "";
+                        TxtFechaI.value = "";
+                        TxtFechaF.value = "";
+                        TxtNumeroJornadas.value = "";
 
                     }
                 }
@@ -62,15 +70,27 @@
             }
         </script>
 
-        <h4>Nuevo Estadio</h4>
+
         <div class="FrmContainer">
             <div hidden="True">
-                ID del Estadio:
+                ID del Torneo:
                 <input class="TxtForm" type="number" id="TxtID" placeholder="Propiedad..." value="-1" />
             </div>
             <div>
-                Nombre del Estadio:
+                Nombre del Torneo:
                 <input class="TxtForm" type="text" id="TxtNombre" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Fecha de inicial:
+                <input class="TxtForm" type="date" id="TxtFechaI" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Fecha Final:
+                <input class="TxtForm" type="date" id="TxtFechaF" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Numero de Jornadas:
+                <input class="TxtForm" type="number" id="TxtNumeroJornadas" placeholder="Propiedad..." />
             </div>
         </div>
 
@@ -84,7 +104,7 @@
         <div class="container-fluid mt-4">
             <div class="row">
                 <div class="col">
-                    <h4>Lista de Estadios</h4>
+                    <h4>Lista de Torneos</h4>
                 </div>
             </div>
             <div class="row">

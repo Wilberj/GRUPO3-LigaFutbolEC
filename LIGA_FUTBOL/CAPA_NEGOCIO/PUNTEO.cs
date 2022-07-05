@@ -28,7 +28,7 @@ namespace CAPA_NEGOCIO
                 }
                 else
                 {
-                    return SqlADOConexion.SQLM.UpdateObject(TableName, inst, "GOLES");
+                    return SqlADOConexion.SQLM.UpdateObject(TableName, inst, "PUNTEO");
                 }
 
             }

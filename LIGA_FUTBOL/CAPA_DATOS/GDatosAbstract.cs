@@ -51,7 +51,8 @@ namespace CAPA_DATOS
                     {
                         continue;
                     }
-                    else if (AtributeValue.GetType() == typeof(string))
+                    else
+                    if (AtributeValue.GetType() == typeof(string))
                     {
                         ColumnNames = ColumnNames + AtributeName.ToString() + ",";
                         Values = Values + "'" + AtributeValue.ToString() + "',";
@@ -72,7 +73,9 @@ namespace CAPA_DATOS
                 }
                 ColumnNames = ColumnNames.TrimEnd(',');
                 Values = Values.TrimEnd(',');
-                string strQuery = "INSERT INTO " + TableName  + "("+ ColumnNames + ") VALUES(" + Values + ") SELECT SCOPE_IDENTITY()";                
+                string strQuery = "INSERT INTO " + TableName
+                    + "(" + ColumnNames + ") VALUES ("
+                    + Values + ") SELECT SCOPE_IDENTITY()";
                 return ExcuteSqlQuery(strQuery);
             }
             catch (Exception)

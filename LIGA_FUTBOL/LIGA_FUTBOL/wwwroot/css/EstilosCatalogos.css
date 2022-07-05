@@ -1,0 +1,35 @@
+﻿body {
+}
+
+.Catalogos {
+    display: grid;
+    grid-template-columns: 200px auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.Menu {
+    background-color: #5c545d; 
+    display: grid;
+    text-align: center; 
+}
+
+.ListaCatalogos{
+    display: flex; 
+    flex-direction: column; 
+}
+
+    .Menu a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+.Contenido{
+
+}

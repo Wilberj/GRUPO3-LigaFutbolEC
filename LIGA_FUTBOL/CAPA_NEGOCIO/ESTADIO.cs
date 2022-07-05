@@ -7,25 +7,25 @@ namespace CAPA_NEGOCIO
 {
     public class ESTADIO
     {
-        private string TableName = "ESTADIO";
+        public string TableName = "ESTADIO";
         public int ID_ESTADIO { get; set; }
         public string NOMBRE_ESTADIO { get; set; }
 
-        public object Save(ESTADIO inst)
+        public object Save(ESTADIO INST)
         {
             try
             {
                 SqlADOConexion.IniciarConexion("sa", "1234");
 
 
-                if (inst.ID_ESTADIO == -1)
+                if (INST.ID_ESTADIO == -1)
                 {
-                    return SqlADOConexion.SQLM.InsertObject(TableName, inst);
+                    return SqlADOConexion.SQLM.InsertObject(TableName, INST);
 
                 }
                 else
                 {
-                    return SqlADOConexion.SQLM.UpdateObject(TableName, inst, "ESTADIO");
+                    return SqlADOConexion.SQLM.UpdateObject(TableName, INST, "ESTADIO");
                 }
 
             }
