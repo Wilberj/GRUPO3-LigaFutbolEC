@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace LIGA_FUTBOL.Pages.Tablas
 {
-    public class NuevoTorneoModel : PageModel
+    public class CatEstadiosModel : PageModel
     {
         public void OnGet()
         {

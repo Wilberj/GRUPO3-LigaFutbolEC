@@ -25,7 +25,7 @@ namespace CAPA_NEGOCIO
                 }
                 else
                 {
-                    return SqlADOConexion.SQLM.UpdateObject(TableName, INST, "ESTADIO");
+                    return SqlADOConexion.SQLM.UpdateObject(TableName, INST, "ID_ESTADIO");
                 }
 
             }

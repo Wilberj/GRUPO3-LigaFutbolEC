@@ -1,0 +1,144 @@
+﻿@page
+@model LIGA_FUTBOL.Pages.Tablas.CarpetaCat.CatJugadoresModel
+@{
+}
+
+<div class="Catalogos">
+    <div class="Menu">
+        <div class="ListaCatalogos">
+            <strong>Lista de catalogos </strong>
+            <a href="~/Tablas/CarpetaCat/Catalogos">Torneos</a>
+            <a href="~/Tablas/CarpetaCat/CatEstadios">Estadios</a>
+            <a href="~/Tablas/CarpetaCat/CatClubes">Clubes</a>
+            <a href="~/Tablas/CarpetaCat/CatJugadores">Jugadores</a>
+        </div>
+
+
+    </div>
+
+    <div class="Contenido">
+        <script type="module">
+            import CreateTable from "../../js/TableComponent.js";
+            const LoadData = async () => {
+                let url = "../../api/Values/GetJugador";
+                let response = await fetch(url);
+                response = await response.json();
+                CreateTable(response, TableData, FunctionEdit);
+            }
+            const FunctionEdit = async (Item) => {
+                console.log(Item);
+                TxtID.value = Item.iD_JUGADOR;
+                TxtNombre1.value = Item.primeR_NOMBRE;
+                TxtNombre2.value = Item.segundO_NOMBRE;
+                TxtApellido1.value = Item.primeR_APELLDIO; 
+                TxtApellido2.value = Item.segundO_APELLIDO;
+                TxtFechaN.value = Item.fechA_NACIMIENTO;
+                TxtNac.value = Item.nacionalidad; 
+            }
+            window.onload = async () => {
+                BtnSave.onclick = async () => {
+                    const ObjIns = {
+                        ID_JUGADOR: (TxtID.value == "" ? -1 : TxtID.value),
+                        PRIMER_NOMBRE: TxtNombre1.value,
+                        SEGUNDO_NOMBRE: TxtNombre2.value,
+                        PRIMER_APELLDIO: TxtApellido1.value,
+                        SEGUNDO_APELLIDO: TxtApellido2.value,
+                        FECHA_NACIMIENTO: TxtFechaN.value,
+                        NACIONALIDAD: TxtNac.value
+                    }
+                    let flag = true;
+                    for (var prop in ObjIns) {
+                        if (ObjIns[prop] == "") {
+                            flag = false;
+                            alert("La propiedad " + prop + " es requerida");
+                            break;
+                        }
+                    }
+
+                    if (!flag) {
+                        return;
+                    }
+                    let url = "../../api/Values/SaveJugador";
+                    let response = await fetch(url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-type': 'application/json; charset-utf-8',
+                            'Accept': '*/*'
+                        },
+                        body: JSON.stringify(ObjIns)
+                    });
+                    response = await response.json();
+                    if (response == true) {
+                        alert("Datos Guardados");
+                        LoadData();
+                        TxtID.Value = "-1";
+                        TxtNombre1.value = "";
+                        TxtNombre2.value = "";
+                        TxtApellido1.value = "";
+                        TxtApellido2.value = "";
+                        TxtFechaN.value = "";
+                        TxtNac.value = "";
+                    }
+                }
+                LoadData();
+            }
+        </script>
+
+        <h4>Agregar Nuevo Jugador: </h4>
+        <div class="FrmContainer">
+            <div hidden="True">
+                ID del Jugador:
+                <input class="TxtForm" type="number" id="TxtID" placeholder="Propiedad..." value="-1" />
+            </div>
+            <div>
+                Primer Nombre:
+                <input class="TxtForm" type="text" id="TxtNombre1" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Segundo Nombre:
+                <input class="TxtForm" type="text" id="TxtNombre2" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Primer Apellido:
+                <input class="TxtForm" type="text" id="TxtApellido1" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Segundo Apellido:
+                <input class="TxtForm" type="text" id="TxtApellido2" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Fecha de Nacimiento:
+                <input class="TxtForm" type="date" id="TxtFechaN" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Nacionalidad:
+                <input class="TxtForm" type="text" id="TxtNac" placeholder="Propiedad..." />
+            </div>
+        </div>
+
+        <div class="FrmContainer">
+            <div>
+                <input class="BTN BTNOk2" type="button" id="BtnSave" value="Guardar" />
+            </div>
+        </div>
+
+
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col">
+                    <h4>Lista de Jugadoress</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table id="TableData" class="FrmTable">
+                        <thead>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

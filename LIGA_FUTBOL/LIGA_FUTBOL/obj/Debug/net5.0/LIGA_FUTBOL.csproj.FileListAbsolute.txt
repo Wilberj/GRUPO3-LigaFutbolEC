@@ -406,7 +406,7 @@ C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_
 C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\TablaPosiciones.cshtml.g.cs
 C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\Jornadas.cshtml.g.cs
 C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\TablaGoleadores.cshtml.g.cs
-C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\Catalogos.cshtml.g.cs
-C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\ActualizarEstadios.cshtml.g.cs
-C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\NuevoTorneo.cshtml.g.cs
-C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\Probando Estadio.cshtml.g.cs
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\CarpetaCat\Catalogos.cshtml.g.cs
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\CarpetaCat\CatClubes.cshtml.g.cs
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\CarpetaCat\CatEstadios.cshtml.g.cs
+C:\Users\Uriel Sandi G\Desktop\Repositorio\GRUPO3-LigaFutbolEC\LIGA_FUTBOL\LIGA_FUTBOL\obj\Debug\net5.0\Razor\Pages\Tablas\CarpetaCat\CatJugadores.cshtml.g.cs

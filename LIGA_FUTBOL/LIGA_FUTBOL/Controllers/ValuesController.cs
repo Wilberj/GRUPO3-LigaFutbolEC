@@ -14,23 +14,7 @@ namespace LIGA_FUTBOL.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        #region Torneo
-        [HttpPost]
-        public Object SaveTorneo(Object Objectinst)
-        {
-            TORNEO Inst = JsonConvert.DeserializeObject<TORNEO>(Objectinst.ToString());
-            Inst.Save(Inst);
-            return true; 
-        }
-
-        [HttpGet]
-
-        public object GetTorneo()
-        {
-            TORNEO Ins = new TORNEO();
-            return Ins.Get(Ins);
-        }
-        #endregion
+        
 
         #region Estadio
         public Object SaveEstadio(Object Objectinst)
@@ -48,5 +32,24 @@ namespace LIGA_FUTBOL.Controllers
             return Ins.Get(Ins);
         }
         #endregion
+
+        #region Jugador
+        public Object SaveJugador(Object Objectinst)
+        {
+            JUGADORES Inst = JsonConvert.DeserializeObject<JUGADORES>(Objectinst.ToString());
+            Inst.Save(Inst);
+            return true;
+        }
+
+        [HttpGet]
+
+        public object GetJugador()
+        {
+            JUGADORES Ins = new JUGADORES();
+            return Ins.Get(Ins);
+        }
+        #endregion
+
+        
     }
 }

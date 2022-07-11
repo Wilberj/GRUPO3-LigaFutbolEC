@@ -1,0 +1,129 @@
+﻿@page
+@model LIGA_FUTBOL.Pages.Tablas.CarpetaCat.CatClubesModel
+@{
+}
+
+<div class="Catalogos">
+    <div class="Menu">
+        <div class="ListaCatalogos">
+            <strong>Lista de catalogos </strong>
+            <a href="~/Tablas/CarpetaCat/Catalogos">Torneos</a>
+            <a href="~/Tablas/CarpetaCat/CatEstadios">Estadios</a>
+            <a href="~/Tablas/CarpetaCat/CatClubes">Clubes</a>
+            <a href="~/Tablas/CarpetaCat/CatJugadores">Jugadores</a>
+        </div>
+
+
+    </div>
+
+    <div class="Contenido">
+        <script type="module">
+            import CreateTable from "../../js/TableComponent.js";
+            import CreateDropDown from "../../js/DropDownComponent.js";
+            const LoadData = async () => {
+                let url = "../../api/Clubes/TakeClubesDatos";
+                let response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-type': 'application/json; charset-utf-8',
+                        'Accept': '*/*'
+                    },
+                });
+                response = await response.json();
+                console.log(response);
+                CreateTable(response[0], TableData, FunctionEdit);
+                CreateDropDown(response[1], DropEstadios, "nombrE_ESTADIO", "iD_ESTADIO");
+            }
+            const FunctionEdit = async (Item) => {
+                console.log(Item);
+                TxtID.value = Item.iD_CLUB;
+                DropEstadios.value = Item.iD_ESTADIO_CLUB;
+                TxtClub.value = Item.nombrE_CLUB;
+                
+
+            }
+            window.onload = async () => {
+                BtnSave.onclick = async () => {
+                    let url = "../../api/Clubes/SaveClub";
+                    const ObjInst = {
+                        ID_CLUB: TxtID.value,
+                        ID_ESTADIO_CLUB: DropEstadios.value,
+                        NOMBRE_CLUB: TxtClub.value,
+                        
+                    }
+                    let flag = true;
+                    for (var prop in ObjInst) {
+                        if (ObjInst[prop] == "") {
+                            flag = false;
+                            alert("La propiedad " + prop + " es requerida");
+                            break;
+                        }
+                    }
+
+                    if (!flag) {
+                        return;
+                    }
+                    let response = await fetch(url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-type': 'application/json; charset-utf-8',
+                            'Accept': '*/*'
+                        },
+                        body: JSON.stringify(ObjInst)
+                    });
+                    response = await response.json();
+                    if (response = true) {
+                        alert("Datos Guardados");
+                        window.location.reload();
+                    }
+                }
+
+                LoadData();
+            }
+        </script>
+
+        <h4>Agregar Nuevo Club: </h4>
+        <div class="FrmContainer">
+            <div hidden="True">
+                ID del Club:
+                <input class="TxtForm" type="number" id="TxtID" placeholder="Propiedad..." value="-1" />
+            </div>
+            <div>
+                Estadio del club:
+                <select class="TxtForm" id="DropEstadios">
+                    <option value="0">Seleccionar Estadio</option>
+                </select>
+
+            </div>
+            <div>
+                Nombre del Club:
+                <input class="TxtForm" type="Text" id="TxtClub" placeholder="Propiedad..." />
+            </div>
+
+        </div>
+
+        <div class="FrmContainer">
+            <div>
+                <input class="BTN BTNOk2" type="button" id="BtnSave" value="Guardar" />
+            </div>
+        </div>
+
+
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col">
+                    <h4>Lista de Clubes</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table id="TableData" class="FrmTable">
+                        <thead>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>

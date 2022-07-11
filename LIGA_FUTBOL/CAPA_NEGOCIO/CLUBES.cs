@@ -9,28 +9,28 @@ namespace CAPA_NEGOCIO
     {
         private string TableName = "CLUBES"; 
 
-        public int idClub { get; set; }
+        public int ID_CLUB{ get; set; }
         
-        public int idEstadio { get; set; }
+        public int ID_ESTADIO_CLUB { get; set; }
 
-        public string nombreClub { get; set; }
+        public string NOMBRE_CLUB { get; set; }
 
 
-        public object Save(CLUBES inst)
+        public object Save(CLUBES INST)
         {
             try
             {
                 SqlADOConexion.IniciarConexion("sa", "1234");
 
 
-                if (inst.idClub== -1)
+                if (INST.ID_CLUB== -1)
                 {
-                    return SqlADOConexion.SQLM.InsertObject(TableName, inst);
+                    return SqlADOConexion.SQLM.InsertObject(TableName, INST);
 
                 }
                 else
                 {
-                    return SqlADOConexion.SQLM.UpdateObject(TableName, inst, "CLUBES");
+                    return SqlADOConexion.SQLM.UpdateObject(TableName, INST, "ID_CLUB");
                 }
 
             }

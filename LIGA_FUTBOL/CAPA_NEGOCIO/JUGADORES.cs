@@ -13,27 +13,27 @@ namespace CAPA_NEGOCIO
 
         public string PRIMER_NOMBRE { get; set; }
         public string SEGUNDO_NOMBRE { get; set; }
-        public string PRIMER_APELLIDO { get; set; }
+        public string PRIMER_APELLDIO { get; set; }
         public string SEGUNDO_APELLIDO { get; set; }
-        public DateTime FECHA_NACIMINETO  { get; set; }
+        public DateTime FECHA_NACIMIENTO  { get; set; }
 
         public string NACIONALIDAD { get; set; }
 
-        public object Save(JUGADORES inst)
+        public object Save(JUGADORES INST)
         {
             try
             {
                 SqlADOConexion.IniciarConexion("sa", "1234");
 
 
-                if (inst.ID_JUGADOR == -1)
+                if (INST.ID_JUGADOR == -1)
                 {
-                    return SqlADOConexion.SQLM.InsertObject(TableName, inst);
+                    return SqlADOConexion.SQLM.InsertObject(TableName, INST);
 
                 }
                 else
                 {
-                    return SqlADOConexion.SQLM.UpdateObject(TableName, inst, "JUGADORES");
+                    return SqlADOConexion.SQLM.UpdateObject(TableName, INST, "ID_JUGADOR");
                 }
 
             }

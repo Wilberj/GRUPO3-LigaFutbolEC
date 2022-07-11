@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/AppForms.css" />
     <link rel="stylesheet" href="~/css/EstilosCatalogos.css" />
+    <script src="~/js/Utilidades.js"> </script>
 
 </head>
 <body>
     <header class="header">
         <a href="~/Index" class="Logo">DK SPORTS</a>
         <a>LIGAS DE FUTBOL</a>
-        <a class="BTN BTNNuevoTorneo" href="~/Tablas/Catalogos">Catalogos</a>
+        <a class="BTN BTNNuevoTorneo" href="~/Tablas/CarpetaCat/Catalogos">Catalogos</a>
         <partial name="_LoginPartial" />
     </header>
     <aside class="AppAside">
@@ -26,6 +27,7 @@
     </aside>
     <main class="AppMain">
         @RenderBody()
+        
     </main>
 
     <script src="~/js/site.js" asp-append-version="true"></script>

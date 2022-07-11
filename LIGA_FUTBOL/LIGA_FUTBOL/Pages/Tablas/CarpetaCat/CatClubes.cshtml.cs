@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace LIGA_FUTBOL.Pages.Tablas
+namespace LIGA_FUTBOL.Pages.Tablas.CarpetaCat
 {
-    public class ActualizarEstadiosModel : PageModel
+    public class CatClubesModel : PageModel
     {
         public void OnGet()
         {

@@ -1,0 +1,212 @@
+﻿@page
+@model LIGA_FUTBOL.Pages.Tablas.CatalogosModel
+@{
+}
+
+
+<div class="Catalogos">
+    <div class="Menu">
+        <div class="ListaCatalogos">
+            <strong>Lista de catalogos </strong>
+            <a href="~/Tablas/CarpetaCat/Catalogos">Torneos</a>
+            <a href="~/Tablas/CarpetaCat/CatEstadios">Estadios</a>
+            <a href="~/Tablas/CarpetaCat/CatClubes">Clubes</a>
+            <a href="~/Tablas/CarpetaCat/CatJugadores">Jugadores</a>
+        </div>
+
+
+    </div>
+
+    <div class="Contenido">
+        <script type="module">
+            import CreateTable from "../../js/TableComponent.js";
+            const ClubesTorneo = [];
+            let Clubes;
+            const LoadData = async () => {
+                let url = "../../api/Torneo/TakeTorneoDatos";
+                let response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-type': 'application/json; charset-utf-8',
+                        'Accept': '*/*'
+                    },
+                });
+                response = await response.json();
+                console.log(response);
+                CreateTable(response[0], TableData, FunctionEdit , );
+                Clubes = response[1];
+                CreateTable(Clubes, TableClubes, AddClub, "Agregar");
+                TxtBusquedaClubes.onchange = (ev) => {
+                    const parametro = ev.target.value;
+                    const ClubesFiltrados = Clubes.filter(x => x.nombrE_CLUB.includes(parametro));
+                    CreateTable(ClubesFiltrados, TableClubes, AddClub , "Agregar");
+                }
+                
+            }
+            const FunctionEdit = async (Item) => {
+                console.log(Item);
+                TxtID.value = Item.iD_TORNEO;
+                TxtNombre.value = Item.nombrE_TORNEO;
+                TxtFechaI.value = Item.fechA_INICIO;
+                TxtFechaF.value = Item.fechA_FINAL;
+                TxtNumeroJornadas.value = Item.numerO_DE_JORNADAS;
+
+
+            }
+
+            const AddClub = (Club) => {
+                console.log(Club);
+                const cl = ClubesTorneo.find(i => i.iD_CLUB == Club.iD_CLUB);
+                if (cl == undefined || cl == null) {
+                    ClubesTorneo.push(Club);
+                }
+                console.log(ClubesTorneo);
+                ClubesDiv.innerHTML = "";
+                ClubesTorneo.forEach((club) => {
+                    const Clm = document.createElement("div");
+                    Clm.innerText = club.nombrE_CLUB;
+                    Clm.className = "Club";
+                    const btnClm = document.createElement("input");
+                    btnClm.value = "X";
+                    btnClm.type = "button";
+                    btnClm.className = "btnClouse";
+                    btnClm.onclick = () => {
+                        const indexElement = ClubesTorneo.indexOf(club);
+                        ClubesTorneo.splice(indexElement, 1);
+                        ClubesDiv.removeChild(Clm);
+                    }
+                    Clm.appendChild(btnClm);
+                    ClubesDiv.appendChild(Clm);
+                });
+            }
+
+            window.onload = async () => {
+                BtnSave.onclick = async () => {
+                    let url = "../../api/Torneo/SaveTorneo";
+                    const ObjIns = {
+                        ID_TORNEO: (TxtID.value == "" ? -1 : TxtID.value),
+                        NOMBRE_TORNEO: TxtNombre.value,
+                        FECHA_INICIO: TxtFechaI.value,
+                        FECHA_FINAL: TxtFechaF.value,
+                        NUMERO_DE_JORNADAS: TxtNumeroJornadas.value,
+                        CLUBES: ClubesTorneo,
+
+                    }
+                    let flag = true;
+                    for (var prop in ObjIns) {
+                        if (ObjIns[prop] == "") {
+                            flag = false;
+                            alert("La propiedad " + prop + " es requerida");
+                            break;
+                        }
+                    }
+
+                    if (!flag) {
+                        return;
+                    }
+
+                    let response = await fetch(url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-type': 'application/json; charset-utf-8',
+                            'Accept': '*/*'
+                        },
+                        body: JSON.stringify(ObjIns)
+                    });
+                    response = await response.json();
+                    if (response == true) {
+                        alert("Datos Guardados");
+                        LoadData();
+                        TxtID.Value = "-1";
+                        TxtNombre.value = "";
+                        TxtFechaI.value = "";
+                        TxtFechaF.value = "";
+                        TxtNumeroJornadas.value = "";
+
+                    }
+                }
+                LoadData();
+                BtnModalClubes.onclick = () => {
+                    modalFunction(ModalClubes); 
+                }
+                BtnCerrarClubes.onclick = () => {
+                    modalFunction(ModalClubes);
+                }
+            }
+        </script>
+
+        <h4>Nuevo Torneo</h4>
+        <div class="FrmContainer">
+            <div hidden="True">
+                ID del Torneo:
+                <input class="TxtForm" type="number" id="TxtID" placeholder="Propiedad..." value="-1" />
+            </div>
+            <div>
+                Nombre del Torneo:
+                <input class="TxtForm" type="text" id="TxtNombre" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Fecha de inicial:
+                <input class="TxtForm" type="date" id="TxtFechaI" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Fecha Final:
+                <input class="TxtForm" type="date" id="TxtFechaF" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Numero de Jornadas:
+                <input class="TxtForm" type="number" id="TxtNumeroJornadas" placeholder="Propiedad..." />
+            </div>
+            <div>
+                Lista de clubes:
+                <div id="ClubesDiv"></div>
+            </div>
+        </div>
+
+        <div class="FrmContainer">
+            <div>
+                <input class="BTN BTNOk2" type="button" id="BtnSave" value="Guardar" />
+                <input class="BTN BTNOk2" type="button" id="BtnModalClubes" value="Agregar Club." />
+            </div>
+        </div>
+
+
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col">
+                    <h4>Lista de Torneos</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table id="TableData" class="FrmTable">
+                        <thead>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="ModalClubes" class="ModalContent">
+            <div class="ContainerForm">
+                <input type="text" id="TxtBusquedaClubes" value="" />
+                <table id="TableClubes" class="FrmTable">
+                    <thead>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="FrmContainer">
+                    <div>
+                        <input class="BTN BTNOk2" type="button" id="BtnCerrarClubes" value="Cerrar" />
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

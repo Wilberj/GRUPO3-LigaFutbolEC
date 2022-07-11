@@ -1,5 +1,5 @@
 ﻿@page
-@model LIGA_FUTBOL.Pages.Tablas.ActualizarEstadiosModel
+@model LIGA_FUTBOL.Pages.Tablas.CatEstadiosModel
 @{
 }
 
@@ -7,32 +7,28 @@
     <div class="Menu">
         <div class="ListaCatalogos">
             <strong>Lista de catalogos </strong>
-
-            <a>Estadios</a>
-            <a>Clubes</a>
-            <a>Jugadores</a>
+            <a href="~/Tablas/CarpetaCat/Catalogos">Torneos</a>
+            <a href="~/Tablas/CarpetaCat/CatEstadios">Estadios</a>
+            <a href="~/Tablas/CarpetaCat/CatClubes">Clubes</a>
+            <a href="~/Tablas/CarpetaCat/CatJugadores">Jugadores</a>
         </div>
 
 
     </div>
+
     <div class="Contenido">
         <script type="module">
-            import CreateTable from "../js/TableComponent.js";
+            import CreateTable from "../../js/TableComponent.js";
             const LoadData = async () => {
-                let url = "../api/Values/GetEstadio";
+                let url = "../../api/Values/GetEstadio";
                 let response = await fetch(url);
                 response = await response.json();
                 CreateTable(response, TableData, FunctionEdit);
             }
             const FunctionEdit = async (Item) => {
                 console.log(Item);
-                TxtID.value = Item.iD_TORNEO;
-                TxtNombre.value = Item.nombrE_TORNEO;
-                TxtFechaI.value = Item.fechA_INICIO;
-                TxtFechaF.value = Item.fechA_FINAL;
-                TxtNumeroJornadas.value = Item.numerO_DE_JORNADAS;
-
-
+                TxtID.value = Item.iD_ESTADIO;
+                TxtNombre.value = Item.nombrE_ESTADIO;
             }
             window.onload = async () => {
                 BtnSave.onclick = async () => {
@@ -41,7 +37,19 @@
                         NOMBRE_ESTADIO: TxtNombre.value,
 
                     }
-                    let url = "../api/Values/SaveEstadio";
+                    let flag = true;
+                    for (var prop in ObjIns) {
+                        if (ObjIns[prop] == "") {
+                            flag = false;
+                            alert("La propiedad " + prop + " es requerida");
+                            break;
+                        }
+                    }
+
+                    if (!flag) {
+                        return;
+                    }
+                    let url = "../../api/Values/SaveEstadio";
                     let response = await fetch(url, {
                         method: 'POST',
                         headers: {
@@ -63,7 +71,7 @@
             }
         </script>
 
-        <h4>Nuevo Estadio</h4>
+        <h4>Agregar Nuevo Estadio: </h4>
         <div class="FrmContainer">
             <div hidden="True">
                 ID del Estadio:
@@ -99,8 +107,5 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-
 </div>

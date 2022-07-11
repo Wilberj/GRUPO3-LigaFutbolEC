@@ -22,7 +22,7 @@
         }
         const tdAction = document.createElement("td");
         const btn = document.createElement("input");
-        btn.className = "btn btn-primary";
+        btn.className = "BTN BTNOk2";
         btn.type = "Button";
         btn.value = BtnValue;
         btn.onclick = () => {

@@ -107,7 +107,7 @@ namespace CAPA_DATOS
                         }
                         else
                         {
-                            Values = Values + AtributeName + "=" + AtributeValue.ToString() + ",";
+                                Values = Values + AtributeName + "=" + AtributeValue.ToString() + ",";
                         }
                     } else
                     {

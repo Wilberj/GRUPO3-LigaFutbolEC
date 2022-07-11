@@ -6,14 +6,18 @@
     grid-template-columns: 200px auto;
     margin: 0px;
     padding: 0px;
+   
+  
 }
 
 
 
 .Menu {
-    background-color: #5c545d; 
+    background-color: #5c545d;
     display: grid;
-    text-align: center; 
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .ListaCatalogos{
